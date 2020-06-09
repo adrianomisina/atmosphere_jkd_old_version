@@ -1,0 +1,201 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+body section {
+    margin: 0px 10% 0px 10%;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    height: 130px;
+    background-color:floralwhite;
+}
+
+header p {
+    font-size: 40px;
+    font-family: impact;
+    color:rgb(43, 0, 0);
+    justify-content:center;
+    margin-left: 10px;  
+    background-color: floralwhite;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: uppercase;
+    color:rgb(71, 17, 17);
+    font-size: 18px;
+    font-family: Impact;
+}
+
+nav a:hover{
+    background-color: rgb(0, 0, 0);
+    color:floralwhite;
+}
+
+.container {
+    background-color:floralwhite;
+    display: flex;
+    justify-content: space-between;
+    width:900px;
+}
+
+.video_capa{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.botao_compra{
+    color:rgb(71, 17, 17);
+    font-size: 35px;
+    font-family: Impact;
+    padding-top: 30px;
+    text-align: center;
+    text-decoration: none; 
+}
+
+h2 {
+    font-family: Calibri;
+    color: rgb(71, 17, 17); 
+    border-top: solid rgb(71, 17, 17) 1px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+h3 {
+font-family: Calibri;
+color: rgb(71, 17, 17); 
+text-align: left;
+
+}
+
+section img {
+    width: 190px;
+    float: left;
+    margin-left: 10px;
+    padding-right: 20px;
+    vertical-align:center;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-family:Calibri;
+    font-size: 18px;
+    color: rgb(34, 32, 32);
+    text-align: left;
+    margin: auto;
+}
+
+.citacao p {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.container_dep{
+    display:flex;
+    flex-flow: column wrap;  
+    text-align: center;
+}
+
+   
+.playlist_1 {
+    margin: left;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}    
+ 
+.playlist_2 {
+    margin: right; 
+    padding-bottom: 10px;
+    padding-left: 60px;
+ }
+
+
+a {
+    text-decoration: none;
+    color: rgb(165, 25, 25);
+}
+
+a:hover {
+    color:rgb(35, 36, 39);
+    transition:all 1s linear;
+}
+
+a:visited {
+    color: rgb(165, 25, 25);
+}
+
+.container_cursos{
+    display:flex;
+    flex-flow: column wrap;  
+    text-align: justify;
+}
+    
+
+#ebooks img {
+    width: 300px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+#ebooks p {
+    margin: 0px;
+    margin-left: 30px;
+    
+    padding-bottom: 0px;
+}
+
+form {
+    width: 190px;
+    margin-left: 30px;
+    font-family: calibri;
+}
+
+.submit  {
+    padding-top: 10px;
+}
+
+#contato p {
+    margin: 0px;
+    margin-left: 30px;
+    padding-bottom: 0px;
+}
+
+footer {
+
+    font-family:Calibri;
+    margin:0px;
+    padding:0px;
+    background-image: linear-gradient(black, rgb(105, 81, 81));
+    color:floralwhite;
+    
+}
+
+#form_atmosphere {
+
+    background-color:floralwhite;
+    color:rgb(63, 0, 0);
+
+}
