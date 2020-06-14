@@ -20,7 +20,7 @@ header p {
     color:rgb(43, 0, 0);
     justify-content:center;
     margin-left: 10px;  
-    background-color: floralwhite;
+    background-color: rgb(248, 248, 248);
 }
 
 .menu{
@@ -51,6 +51,10 @@ nav a {
 nav a:hover{
     background-color: rgb(0, 0, 0);
     color:floralwhite;
+}
+
+.redes_sociais img{
+    width:19px;
 }
 
 .container {
@@ -186,6 +190,7 @@ form {
 footer {
 
     font-family:Calibri;
+    font-size:10px;
     margin:0px;
     padding:0px;
     background-image: linear-gradient(black, rgb(105, 81, 81));
@@ -197,5 +202,12 @@ footer {
 
     background-color:floralwhite;
     color:rgb(63, 0, 0);
+    max-width: 300px;
+    resize: none;
+}
 
+#form_atmosphere, textarea{
+    resize: none;
+    width:200px;
+    
 }
