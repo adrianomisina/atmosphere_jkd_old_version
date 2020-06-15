@@ -10,16 +10,14 @@ body section {
 header{
     display:flex;
     justify-content: center;
-    height: 130px;
+    height: 80px;
     background-color:floralwhite;
 }
 
 header p {
-    font-size: 40px;
+    font-size: 23px;
     font-family: impact;
     color:rgb(43, 0, 0);
-    justify-content:center;
-    margin-left: 10px;  
     background-color: rgb(248, 248, 248);
 }
 
@@ -40,7 +38,7 @@ nav ul{
 
 nav a {
     display: block;
-    padding: 15px;
+    padding: 12px;
     text-decoration: none;
     text-align: uppercase;
     color:rgb(71, 17, 17);
@@ -60,21 +58,21 @@ nav a:hover{
 .container {
     background-color:floralwhite;
     display: flex;
-    justify-content: space-between;
-    width:900px;
+    justify-content: right;
+    width:800px;
 }
 
 .video_capa{
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .botao_compra{
     color:rgb(71, 17, 17);
-    font-size: 35px;
+    font-size: 25px;
     font-family: Impact;
-    padding-top: 30px;
+    padding-top: 5px;
     text-align: center;
     text-decoration: none; 
 }
@@ -210,4 +208,12 @@ footer {
     resize: none;
     width:200px;
     
+}
+
+@media only screen and (orientation:landscape) {
+
+
+.nav, a {
+   width:100%}
+
 }
