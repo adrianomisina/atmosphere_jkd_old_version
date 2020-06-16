@@ -3,8 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale= 0.0">
+    <meta name="viewport" content="width=device-width, user-scale=0">
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript">
+            window.onload = function (){
+                document.querySelector(".menumobile").addEventListener("click", function(){
+                    if(document.querySelector(".menu nav ul").style.display == 'flex') { 
+                        document.querySelector(".menu nav ul").style.display = 'none';
+                    } else {
+                        document.querySelector(".menu nav ul").style.display = 'flex';
+                    }
+                });
+            };
+            </script>  
         <title>Atmosphere JKD Discover Your Flow</title>
     </head>
 
@@ -12,11 +23,17 @@
         <header>
             <div class="container">
                 <div class="logo">
-                <p>Atmosphere JKD</p>     
+                <p>Atmosphere JKD</p>
                 </div> <!-- logo -->
     
                 <div class="menu">
                     <nav>
+                        <div class="menumobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
+
                         <ul class="active">
                             <li><a href="#sobre">SOBRE</a></li>
                             <li><a href="#depoimentos">DEPOIMENTOS</a></li>
@@ -65,14 +82,10 @@
                                               
                 <p>Oi, eu sou o Adriano Misina, Faixa Preta de Jiu Jitsu pela Gracie Barra Osasco
                 e Instrutor de Jeet Kune Do - Bruce Lee`s Fighting Method.</p>
-
-                <br>
-                              
+                                           
                 <p>Atmosphere JKD Online é um programa de 3 cursos - do básico ao avançado - onde o aluno tem acesso 
                 a aulas em vídeo e uma área exclusiva interativa que permite o estudo do Jeet Kune Do de qualquer lugar.</p>
                 
-                <br>
-
                 <div class="citacao">
         
                 <p><em>“Empty your mind, be formless, shapeless - like water.
@@ -127,12 +140,9 @@
         
             <br>
                 
-            <div class="playlist_1">
+            <div class="playlist">
                     <iframe width="460" height="315" src="https://www.youtube.com/embed/videoseries?list=PLBUoUZEuh34YX-gq_o_JAdjXaQBBpjeJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe width="460" height="315" src="https://www.youtube.com/embed/SUdKi7HqK54" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                    <br>
-                <div class="playlist_2">
                     <iframe width="460" height="315" src="https://www.youtube.com/embed/6Ah2xxviN4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe width="460" height="315" src="https://www.youtube.com/embed/BeHOq1JBW0Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -147,7 +157,7 @@
 
                 <div class="curso_basico">
                     <img src="imagem/curso_basico_jkd01.jpg">
-                    <h3><a href="https://go.hotmart.com/O18559047Q" target="_blank"><u>Curso Básico de Jeet Kune Do</u></a></h3> 
+                    <h3><a href="https://go.hotmart.com/O18559047Q" target="_blank"><u>Curso Básico de JKD</u></a></h3> 
                     <p>Apresentamos os principais aspectos básico e fundamentais do estilo. 
                     Conceitos como: guarda, footworks, socos básicos, chutes básicos e combos,
                     são abordados de maneira prática e objetiva.</p>
@@ -203,15 +213,15 @@
             <h2><u>Contato:</u></h2>
     
             <p><a href="mailto:contato@treinodelutaemcasa.com.br">contato@treinodelutaemcasa.com.br</a></p>
-            <p><a href="tel:11-94586-1188">whats: (11) 94586-1188</a><p></p>
+            <p><a href="tel:11-94586-1188">whats: (11) 94586-1188</a></p>
     
             <br>
     
             <form id="form_atmosphere" action="https://formspree.io/maypoqgd"method="POST">
     
-                <label>Your email:<input type="text" name="_replyto"></label>
+                <label>email:<input type="text" name="_replyto"></label>
     
-                <label>Your message:<textarea name="message"></textarea></label>
+                <label>message:<textarea name="message"></textarea></label>
     
                 <!-- your other form fields go here -->
     
@@ -220,11 +230,9 @@
             </form>
     
         </section>
-    
-        <br>
-        
+       
         <footer>
-        Desenvolvido por Brown Dog Digital. Copyright - Todos os direitos reservados.
+        <h3>Brown Dog Digital.</h3>
         </footer>
     </body>
     
