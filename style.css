@@ -10,17 +10,15 @@ body section {
 header{
     display:flex;
     justify-content: center;
-    height: 130px;
+    height: 80px;
     background-color:floralwhite;
 }
 
 header p {
-    font-size: 40px;
+    font-size: 23px;
     font-family: impact;
     color:rgb(43, 0, 0);
-    justify-content:center;
-    margin-left: 10px;  
-    background-color: rgb(248, 248, 248);
+    background-color:floralwhite;
 }
 
 .menu{
@@ -40,7 +38,7 @@ nav ul{
 
 nav a {
     display: block;
-    padding: 15px;
+    padding: 12px;
     text-decoration: none;
     text-align: uppercase;
     color:rgb(71, 17, 17);
@@ -60,21 +58,24 @@ nav a:hover{
 .container {
     background-color:floralwhite;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width:900px;
 }
 
 .video_capa{
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 30px;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .botao_compra{
     color:rgb(71, 17, 17);
-    font-size: 35px;
+    font-size: 25px;
     font-family: Impact;
-    padding-top: 30px;
+    padding-top: 5px;
     text-align: center;
     text-decoration: none; 
 }
@@ -90,7 +91,7 @@ h2 {
 h3 {
 font-family: Calibri;
 color: rgb(71, 17, 17); 
-text-align: left;
+text-align: justify;
 
 }
 
@@ -108,7 +109,7 @@ section p {
     font-size: 18px;
     color: rgb(34, 32, 32);
     text-align: left;
-    margin: auto;
+    
 }
 
 .citacao p {
@@ -122,18 +123,14 @@ section p {
     text-align: center;
 }
 
-   
-.playlist_1 {
-    margin: left;
-    padding-bottom: 10px;
-    padding-left: 60px;
-}    
- 
-.playlist_2 {
-    margin: right; 
-    padding-bottom: 10px;
-    padding-left: 60px;
- }
+
+
+#atmosphere_jkd_videos .playlist {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+        
+}
 
 
 a {
@@ -167,14 +164,15 @@ a:visited {
 #ebooks p {
     margin: 0px;
     margin-left: 30px;
-    
     padding-bottom: 0px;
 }
 
 form {
-    width: 190px;
-    margin-left: 30px;
+    
+    width:100px;
     font-family: calibri;
+    padding-bottom: 30px;
+    
 }
 
 .submit  {
@@ -182,32 +180,95 @@ form {
 }
 
 #contato p {
-    margin: 0px;
-    margin-left: 30px;
     padding-bottom: 0px;
+    line-height:3px;
+
 }
 
-footer {
-
+footer h3{
     font-family:Calibri;
     font-size:10px;
-    margin:0px;
-    padding:0px;
+    text-align:center;
     background-image: linear-gradient(black, rgb(105, 81, 81));
     color:floralwhite;
-    
 }
 
 #form_atmosphere {
-
     background-color:floralwhite;
     color:rgb(63, 0, 0);
-    max-width: 300px;
     resize: none;
 }
 
 #form_atmosphere, textarea{
-    resize: none;
-    width:200px;
-    
+    resize: none;  
+}
+
+.menumobile{
+    display: none;
+    width:40px;
+    height:40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: rgb(63, 0, 0);;
+}
+
+@media (max-width:800px){
+
+    .body {
+        margin:0;
+        padding:0;
+    }
+
+
+    section,
+    p,
+    img
+    {
+        width:auto;
+        text-align: left;
+    }
+  
+
+    .contatiner{
+        flex-direction: column;
+    }
+
+      header.container {
+       flex-direction: row;
+   }
+
+   nav ul {
+       flex-direction: column;
+       display: none;
+       position: absolute;
+       left: 0;
+       width: 100%;
+       background-color: white;
+   }
+
+   header {
+       height:auto;
+       background-color: floralwhite;
+   }
+
+   .logo {
+       padding-right: 20px;
+   }
+
+   .menumobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+
+    .footer {
+    width:100%
+
+   }
+
 }
