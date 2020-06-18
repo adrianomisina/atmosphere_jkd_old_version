@@ -80,13 +80,16 @@ nav a:hover{
     flex-wrap: wrap;
 }
 
-.botao_compra{
-    color:rgb(71, 17, 17);
-    font-size: 18px;
-    font-family: 'Special Elite', cursive;
-    padding-top: 5px;
-    text-align: center;
+.botao_compra {
+    display:flex;
+    
+    justify-content: center;
     text-decoration: none; 
+    padding-top: 10px;
+}
+
+.botao_compra img {
+    width:400px;
 }
 
 h2 {
@@ -202,7 +205,7 @@ footer h3{
 }
 
 #form_atmosphere {
-    background-color:floralwhite;
+    background-color:rgb(255, 255, 255);
     color:rgb(63, 0, 0);
     resize: none;
 }
@@ -317,5 +320,10 @@ footer h3{
     width:100%
 
    }
+
+   .botao_compra img {
+    width:200px;
+}
+
 
 }
