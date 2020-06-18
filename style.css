@@ -10,15 +10,24 @@ body section {
 header{
     display:flex;
     justify-content: center;
-    height: 80px;
-    background-color:floralwhite;
+    height:100%;
+    background-color:rgb(255, 255, 255);
 }
 
 header p {
-    font-size: 23px;
-    font-family: impact;
-    color:rgb(43, 0, 0);
-    background-color:floralwhite;
+    font-size: 22px;
+    font-family:'Special Elite', cursive;
+    color:rgb(97, 3, 3);
+    background-color:rgb(255, 255, 255);
+}
+
+.logo{
+    width:auto;
+    height: auto;
+}
+
+#sobre img {
+    width:120px;
 }
 
 .menu{
@@ -42,24 +51,24 @@ nav a {
     text-decoration: none;
     text-align: uppercase;
     color:rgb(71, 17, 17);
-    font-size: 18px;
-    font-family: Impact;
+    font-size: 22px;
+    font-family:'Peddana', serif;
 }
 
 nav a:hover{
     background-color: rgb(0, 0, 0);
-    color:floralwhite;
+    color:rgb(255, 255, 255);
 }
 
 .redes_sociais img{
-    width:19px;
+    width:18px;
 }
 
 .container {
-    background-color:floralwhite;
+    background-color:rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    width:900px;
+    width:100%;
 }
 
 .video_capa{
@@ -73,15 +82,15 @@ nav a:hover{
 
 .botao_compra{
     color:rgb(71, 17, 17);
-    font-size: 25px;
-    font-family: Impact;
+    font-size: 18px;
+    font-family: 'Special Elite', cursive;
     padding-top: 5px;
     text-align: center;
     text-decoration: none; 
 }
 
 h2 {
-    font-family: Calibri;
+    font-family: 'Special Elite', cursive;
     color: rgb(71, 17, 17); 
     border-top: solid rgb(71, 17, 17) 1px;
     text-align: left;
@@ -89,14 +98,14 @@ h2 {
 }
 
 h3 {
-font-family: Calibri;
+font-family: 'Special Elite', cursive;
 color: rgb(71, 17, 17); 
 text-align: justify;
 
 }
 
 section img {
-    width: 190px;
+    width: 160px;
     float: left;
     margin-left: 10px;
     padding-right: 20px;
@@ -105,10 +114,10 @@ section img {
 }
 
 section p {
-    font-family:Calibri;
-    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
     color: rgb(34, 32, 32);
-    text-align: left;
+    text-align: justify;
     
 }
 
@@ -129,7 +138,11 @@ section p {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-        
+   
+}
+
+.playlist iframe {
+    padding:5px
 }
 
 
@@ -161,16 +174,11 @@ a:visited {
     padding-bottom: 20px;
 }
 
-#ebooks p {
-    margin: 0px;
-    margin-left: 30px;
-    padding-bottom: 0px;
-}
 
 form {
     
     width:100px;
-    font-family: calibri;
+    font-family: 'Peddana', serif;
     padding-bottom: 30px;
     
 }
@@ -186,7 +194,7 @@ form {
 }
 
 footer h3{
-    font-family:Calibri;
+    font-family:'Special Elite', cursive;
     font-size:10px;
     text-align:center;
     background-image: linear-gradient(black, rgb(105, 81, 81));
@@ -217,29 +225,67 @@ footer h3{
     background-color: rgb(63, 0, 0);;
 }
 
-@media (max-width:800px){
+@media (max-width:700px){
 
     .body {
         margin:0;
         padding:0;
     }
 
+    header{
+        width: auto;
+        height: auto;
+    }
 
     section,
     p,
-    img
+    img, h1, h2, h3
     {
         width:auto;
-        text-align: left;
+        text-align: justify;
+        padding:10px;
+        margin:auto;
+        font-size:12px;
+        
+    }
+
+    .logo p{
+        text-align: center;
+        padding: auto;
+    }
+
+    .menu{
+        justify-content: space-around;
+    }
+
+    #contato p{
+        width:auto;
+        line-height: 10px;
+        font-size:12px;
+    }
+
+    .video_capa iframe {
+        width:auto;
+    }
+
+    .playlist iframe {
+        width:auto;
+        padding: 10px;
+
     }
   
+    #ebooks img {
+        width: 100px;
+        height: 100%;
 
-    .contatiner{
+    }
+
+     .container{
         flex-direction: column;
     }
 
       header.container {
-       flex-direction: row;
+       flex-direction: column;
    }
 
    nav ul {
@@ -264,6 +310,7 @@ footer h3{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 10px;
    }
 
     .footer {
